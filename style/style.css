@@ -1,0 +1,210 @@
+.mainer {
+  background-color: wheat;
+}
+
+.mainer .container .header {
+  text-align: center;
+  font-size: 25px;
+  height: 125px;
+}
+
+.mainer .container .main {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.mainer .container .main .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+}
+
+.mainer .container .main .list li:hover {
+  color: gray;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainer .container .main .flags {
+  width: 100%;
+  height: 30em;
+  margin-top: 3em;
+}
+
+.mainer .container .main .flags:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.mainer .container .main .allimg {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainer .container .main .allimg img {
+  width: 250px;
+  height: 200px;
+}
+
+.mainer .container .main .allimg .images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .main .allimg .images2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images2:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .main .allimg .images3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images3:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .main .allimg .images4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images4:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .main .allimg .images5 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images5:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .main .allimg .images6 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainer .container .main .allimg .images6:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: blue;
+}
+
+.mainer .container .footer {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.mainer .container .footer .allus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.mainer .container .footer .allus span {
+  size: 30em;
+}
+
+.mainer .container .footer .allus a {
+  font-style: italic;
+  color: black;
+}
+
+.mainer .container .footer .allus a:hover {
+  color: gray;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainer .container .footer .final {
+  text-align: center;
+  font-size: 45px;
+  height: 125px;
+  margin-top: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

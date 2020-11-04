@@ -14,6 +14,24 @@
   margin: auto;
 }
 
+.mainer .container .main .flag {
+  position: relative;
+  text-align: center;
+}
+
+.mainer .container .main .flag:hover span {
+  display: block;
+}
+
+.mainer .container .main .flag span {
+  position: absolute;
+  z-index: 999;
+  left: 49%;
+  top: 50%;
+  font-size: 2rem;
+  display: none;
+}
+
 .mainer .container .main .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,13 +64,14 @@
 }
 
 .mainer .container .main .allimg {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mainer .container .main .allimg img {
@@ -60,16 +79,19 @@
   height: 200px;
 }
 
-.mainer .container .main .allimg .images {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
+.mainer .container .main .allimg div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
+  margin-top: 1rem;
 }
 
-.mainer .container .main .allimg .images:hover {
+.mainer .container .main .allimg div:hover {
   cursor: pointer;
   opacity: 0.5;
   -webkit-transition: 0.3s;
@@ -77,89 +99,8 @@
   color: blue;
 }
 
-.mainer .container .main .allimg .images2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.mainer .container .main .allimg .images2:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: blue;
-}
-
-.mainer .container .main .allimg .images3 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.mainer .container .main .allimg .images3:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: blue;
-}
-
-.mainer .container .main .allimg .images4 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.mainer .container .main .allimg .images4:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: blue;
-}
-
-.mainer .container .main .allimg .images5 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.mainer .container .main .allimg .images5:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: blue;
-}
-
-.mainer .container .main .allimg .images6 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.mainer .container .main .allimg .images6:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: blue;
+.mainer .container .main .allimg div span {
+  margin-top: 0.5rem;
 }
 
 .mainer .container .footer {
@@ -173,8 +114,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -183,23 +122,55 @@
   width: 100%;
 }
 
-.mainer .container .footer .allus span {
+.mainer .container .footer .allus div {
+  text-align: center;
+  width: 30%;
+}
+
+.mainer .container .footer .allus .contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainer .container .footer .allus .contact #last-child {
+  margin-left: 1rem;
+}
+
+.mainer .container .footer .allus .contact span {
+  position: absolute;
+  left: 97px;
+  top: -4px;
+  font-size: 30px;
+}
+
+.mainer .container .footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainer .container .footer span {
   size: 30em;
 }
 
-.mainer .container .footer .allus a {
+.mainer .container .footer a {
   font-style: italic;
   color: black;
 }
 
-.mainer .container .footer .allus a:hover {
+.mainer .container .footer a:hover {
   color: gray;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.mainer .container .footer .final {
+.mainer .container .final {
   text-align: center;
   font-size: 45px;
   height: 125px;

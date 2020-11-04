@@ -1,142 +1,151 @@
 @import "../mixin/mixin";
 
 .mainer {
-    background-color: wheat;
+  background-color: wheat;
 
-    .container {
-        .header {
-            text-align: center;
-            font-size: 25px;
-            height: 125px;
-        }
-
-        .main {
-
-            width: 70%;
-            height: auto;
-            margin: auto;
-
-
-            .list {
-                display: flex;
-                flex-wrap: wrap;
-                list-style-type: none;
-                justify-content: space-around;
-                font-size: 20px;
-
-                li {
-                    &:hover {
-                        @include hov;
-                    }
-                }
-
-            }
-
-            .flags {
-                width: 100%;
-                height: 30em;
-                margin-top: 3em;
-
-                &:hover {
-                    opacity: 0.5;
-                    transition: 0.5;
-                }
-
-            }
-
-            .allimg {
-
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-wrap: wrap;
-
-
-                img {
-                    width: 250px;
-                    height: 200px;
-                }
-
-                .images {
-                    @include photo;
-
-                }
-
-                .images2 {
-                    @include photo;
-                }
-
-                .images3 {
-                    @include photo;
-                }
-
-                .images4 {
-                    @include photo;
-                }
-
-                .images5 {
-                    @include photo;
-                }
-
-                .images6 {
-                    @include photo;
-                }
-
-
-
-
-
-            }
-
-
-        }
-
-        .footer {
-
-            width: 70%;
-            height: auto;
-            margin: auto;
-            margin-top: 10px;
-
-            .allus {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                font-size: 20px;
-                font-weight: bold;
-                width: 100%;
-
-                span {
-                    size: 30em;
-                }
-
-                a {
-                    font-style: italic;
-                    color: black;
-
-
-                    &:hover {
-                        @include hov;
-                    }
-
-
-                }
-
-
-
-
-            }
-
-            .final {
-                text-align: center;
-                font-size: 45px;
-                height: 125px;
-                margin-top: 1em;
-                font-weight: bold;
-                text-decoration: underline;
-            }
-        }
-
+  .container {
+    .header {
+      text-align: center;
+      font-size: 25px;
+      height: 125px;
     }
 
+    .main {
+      width: 70%;
+      height: auto;
+      margin: auto;
+
+      .flag {
+        position: relative;
+        text-align: center;
+
+        &:hover {
+          span {
+            display: block;
+          }
+        }
+
+        span {
+          position: absolute;
+          z-index: 999;
+          left: 49%;
+          top: 50%;
+          font-size: 2rem;
+          display: none;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: space-around;
+        font-size: 20px;
+
+        li {
+          &:hover {
+            @include hov;
+          }
+        }
+      }
+
+      .flags {
+        width: 100%;
+        height: 30em;
+        margin-top: 3em;
+
+        &:hover {
+          opacity: 0.5;
+          transition: 0.5;
+        }
+      }
+
+      .allimg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+          width: 250px;
+          height: 200px;
+        }
+
+        div {
+          @include photo;
+
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin-top: 1rem;
+
+          span {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .footer {
+      width: 70%;
+      height: auto;
+      margin: auto;
+      margin-top: 10px;
+
+      .allus {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+
+        div {
+          text-align: center;
+          width: 30%;
+        }
+
+        .contact {
+          position: relative;
+          display: flex;
+
+          #last-child {
+            margin-left: 1rem;
+          }
+
+          span {
+            position: absolute;
+            left: 97px;
+            top: -4px;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      span {
+        size: 30em;
+      }
+
+      a {
+        font-style: italic;
+        color: black;
+
+        &:hover {
+          @include hov;
+        }
+      }
+    }
+
+    .final {
+      text-align: center;
+      font-size: 45px;
+      height: 125px;
+      margin-top: 1em;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,8 +1,5 @@
 @mixin photo {
-    flex: 1;
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
+
 
     &:hover {
         cursor: pointer;
